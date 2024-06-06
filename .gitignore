@@ -1,0 +1,16 @@
+# IDE specific cache
+.vscode/
+.idea/
+
+# Compiled output directories
+bin/
+out/
+
+# Compiled output directories in all subfolders
+**/bin/
+**/out/
+**/target/
+**/build/
+
+# Bytecode files in all subfolders
+**/*.class
