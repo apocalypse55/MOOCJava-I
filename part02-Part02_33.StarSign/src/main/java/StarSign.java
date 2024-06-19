@@ -8,29 +8,58 @@ public class StarSign {
         //NB: If the tests don't seem to pass, you should try the methods here
         //in the main to make sure they print the correct shapes!
         
-        printStars(3);
-        System.out.println("\n---");  // printing --- between the shapes
-        printSquare(4);
-        System.out.println("\n---");
-        printRectangle(5, 6);
-        System.out.println("\n---");
+        // // printStars(3);
+        // printSquare(5);
+        // System.out.println("\n");
+        // printRectangle(5, 7);
+        // System.out.println("\n");
         printTriangle(3);
-        System.out.println("\n---");
+        System.out.println("\n");
     }
 
     public static void printStars(int number) {
         // first part of the exercise
+        for (int i = 1; i <= number; i++) {
+            System.out.print("*");
+        }
+        System.out.println("");
     }
 
     public static void printSquare(int size) {
         // second part of the exercise
+        for(int i = 1; i <= size; i++ ){
+            for(int j = 1; j <= size - 1 ; j++) {
+                System.out.print("*");
+            }
+            System.out.println("*");
+        }
+        System.out.println("");
     }
+
+    
 
     public static void printRectangle(int width, int height) {
         // third part of the exercise
+        for(int i = 1; i <= height; i++) {
+            for(int j = 1; j <= width-1; j++ ) {
+                System.out.print("*");
+            }
+            System.out.println("*");
+        }
+        System.out.println("");
     }
 
     public static void printTriangle(int size) {
         // fourth part of the exercise
+        for(int i = 1; i <= size; i++) {
+            for(int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            // for (int k = 1; k <= i; k++) {
+            //     System.out.print("*");
+            // }
+            System.out.println("");
+        }
+        System.out.println("");
     }
 }
