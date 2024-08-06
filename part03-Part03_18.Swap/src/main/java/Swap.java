@@ -17,12 +17,12 @@ public class Swap {
             System.out.println(array[index]);
             index++;
         }
-        System.out.println("");
-
-        // Implement here
-        // asking for the two indices
-        // and then swapping them
-
+        System.out.println(" Give two indices to swap ");
+        int swapper = Integer.valueOf(scanner.nextLine());
+        int swapped = Integer.valueOf(scanner.nextLine());
+        int helper = array[swapper];
+        array[swapper] = array[swapped];
+        array[swapped] = helper;
         System.out.println("");
         index = 0;
         while (index < array.length) {
